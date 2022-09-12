@@ -1,0 +1,54 @@
+<div class="container">
+<p class="alert"><%= alert %></p>
+
+  <h3>Welcome</h3>
+<div class="card">
+  <div class="card-body">
+   <p>You are visiting the Good Works On Earth research site containing our database designed to research English in a revealing way. To share with you some of the earlier results of this long research ..</p>
+<p>We Invite You ..<p>
+<p>Enjoy instant access to our free ebook, entitled ..<p>
+
+<h3>StarLight Expressions of the Letters Trestle
+            by, Kathy Onu</h3>
+
+      <% if current_user %>   
+        <a href="app\assets\stararts.pdf" download class="btn btn-outline-success" >  
+      StarLight Expressions
+  </a> <% else %>
+  <%= link_to "login", new_user_session_path, class:"btn btn-outline-info" %>
+
+      <% end %>    
+
+      <p class="mt-4">You can save this ebook ~ or ~
+You can view in Preview, or other suitable .pdf format readers.</p>
+
+<p>This book is about the Star Arts of English words that are created using the art and science of the *Lexigram.</p>
+
+<p>All seekers of truth visiting Good Works On Earth's site are immediately and always able to download this ebook as our Thank You to you for your caring to awaken and heal thysElf.</p>
+
+<p>Please accept our ebook, a gift to every human on earth in the name of awakenings and healings, in plain English.</p>
+
+<b>* Lexigram</b>, comes from two word parts:
+
+<b>lexi</b> : means, the word.
+An example is lexicon, meaning the word reference, the dictionary.
+
+<b>-gram</b> : a suffix, meaning .. drawn out in full or written out in full.
+
+<b>Lexigram</b>, as a word, and as an art and a science, is shared with Star Arts examples, in this free ebook.
+
+  </div>
+</div>
+<p>
+</div>
+
+<!--<%= link_to "register", new_user_registration_path%>
+<%= link_to "login", new_user_session_path %>
+   <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <% if current_user %>   
+        <%= current_user.email %>
+        <%= button_to "log out", destroy_user_session_path, method: :delete, data: {turbo: false}, class: "btn btn-success" %>
+      <% end %> -->
+ 
+
